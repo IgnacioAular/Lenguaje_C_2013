@@ -10,11 +10,11 @@
 int main(void)
 {
 	
-	char nombre[15] = "Ignacio";
-	char apellido[15] = "Aular";
-	char sexo = 'M';
-	int edad = 36;	
-	float sueldo = 2.000;
+    char nombre[15] = "Ignacio";
+    char apellido[15] = "Aular";
+    char sexo = 'M';
+    int edad = 36;	
+    float sueldo = 2.000;
 	
     printf("Mi nombre es: %s.\n", nombre);
     printf("Mi Apellido es: %s.\n", apellido);
