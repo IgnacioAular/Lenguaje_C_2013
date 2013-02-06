@@ -9,11 +9,11 @@
 
 int main(void)
 {
-	// Declaración e inicialización de variable
-	int numero = 33;
+    // Declaración e inicialización de variable
+    int numero = 33;
 	
-	// Si numero es igual a 1 se ejecuta la instrucción del if
-	if ( numero == 1 )
+    // Si numero es igual a 1 se ejecuta la instrucción del if
+    if ( numero == 1 )
     {
     	printf("Imprimiendo lo que esta en el if.\n");
     }
@@ -26,7 +26,7 @@ int main(void)
     	printf("Imprimiendo lo que esta en el else.\n");
     }
     	
-	return 0;
+    return 0;
 }
 
 
