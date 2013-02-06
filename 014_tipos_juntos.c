@@ -22,6 +22,6 @@ int main(void)
     printf("Mi edad es: %d.\n", edad);
     printf("Mi sueldo es: %.3fBsF.\n", sueldo);    
     	
-	return 0;
+    return 0;
 }
 
