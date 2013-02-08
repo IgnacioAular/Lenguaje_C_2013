@@ -9,13 +9,19 @@
 
 int main(void)
 {
+	// Declaración e inicialización de variables
 	int numero = 0;
 	int resultado = 0;
+	
 	printf("\n  *** ***************************************** ***");
 	printf("\n  *** Bienvenido al Sistema de Sumado Recursivo ***\n");
 	printf("\t***   Pulse enter para comenzar   ***\n");
 	printf("\t  *** ************************* ***\n");
-	char seguir = getchar();	
+	
+	// Detiene la continuidad del programa hasta que se pulse una tecla
+	char seguir = getchar();
+	
+	// Ciclo que permite ver en una primera instancia los mensajes del proceso
 	do 
 	{
 		printf("\nIngrese un valor entero: ");
@@ -26,8 +32,12 @@ int main(void)
 		getchar();
 		seguir = tolower(getchar());		
 	}
-	while ( seguir == 's' );
+	while ( seguir == 's' ); // Si la condicion es verdadera se sigue ejecutando el do_while
+	
+	// Ofresemos un mensaje de despedida al usuario final
 	printf("\n<<< Gracias por usar nuestro sistema. >>>\n\n");
+	
+	// Le indica al sistema operativo que el programa ha finalizado con éxito
 	return 0;
 }
 
