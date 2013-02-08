@@ -22,7 +22,7 @@ int main(void)
     	printf("En lenguaje C solo el cero representa: Falso.\n");
     }
     	
-	return 0;
+    return 0;
 }
 
 
