@@ -13,6 +13,7 @@ int main(void)
 	int numero = 0;
 	int resultado = 0;
 	
+	// Muestra mensaje de bienvenida al usuario y acción para continuar
 	printf("\n  *** ***************************************** ***");
 	printf("\n  *** Bienvenido al Sistema de Sumado Recursivo ***\n");
 	printf("\t***   Pulse enter para comenzar   ***\n");
