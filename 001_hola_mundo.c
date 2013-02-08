@@ -1,4 +1,4 @@
-// Porgrama: hola_mundo.c
+// Programa: hola_mundo.c
 // Autor: Ignacio Aular
 // Versión: 1.0
 // Fecha: 05/02/2013
