@@ -9,11 +9,11 @@
 
 int main(void)
 {
-	// Declaración e inicialización de variable
-	int es_falso = 0;
+    // Declaración e inicialización de variable
+    int es_falso = 0;
 	
-	// Si el valor es 0 entonces la condición del if es falsa y no se imprime
-	if ( es_falso )
+    // Si el valor es 0 entonces la condición del if es falsa y no se imprime
+    if ( es_falso )
     {
     	printf("Cualquier numero distinto de cero representa: Verdadero.\n");
     }
