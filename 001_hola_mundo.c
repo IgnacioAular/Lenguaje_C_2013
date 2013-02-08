@@ -1,3 +1,4 @@
+// Porgrama: hola_mundo.c
 // Autor: Ignacio Aular
 // Versión: 1.0
 // Fecha: 05/02/2013
@@ -9,7 +10,7 @@
 
 int main(void)
 {
-	printf("Hola Mundo\n");
-	return 0;
+    printf("Hola Mundo\n");
+    return 0;
 }
 
