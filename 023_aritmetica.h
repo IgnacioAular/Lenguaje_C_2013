@@ -30,7 +30,7 @@ void procesar_signo(char signo)
         printf("Ingrese el valor 02: ");
         scanf("%f", &numero2);
     }
-    else // Si se trata de una divisi�n se cuida que el segundo valor sea distinto a cero
+    else // Si se trata de una división se cuida que el segundo valor sea distinto a cero
     {
         do
         {
@@ -43,7 +43,7 @@ void procesar_signo(char signo)
         } while ( numero2 == 0.0f );
     }
 
-    // Se selecciona una operaci�n y se procesan los valores dando un resultado
+    // Se selecciona una operación y se procesan los valores dando un resultado
     switch ( signo )
     {
         case '+': resultado = numero1 + numero2; break;
@@ -52,7 +52,7 @@ void procesar_signo(char signo)
         case '/': resultado = numero1 / numero2; break;
     }
 
-    // Dependiendo del tipo de operaci�n se muestra la informaci�n en formato apropiado
+    // Dependiendo del tipo de operación se muestra la información en formato apropiado
     if ( signo != '/')
     {
         printf("%.0f %c %.0f = %.0f\n\n", numero1, signo, numero2, resultado);
