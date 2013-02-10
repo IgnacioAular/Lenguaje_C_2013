@@ -1,23 +1,22 @@
 // Programa: calculadora.c
 // Autor: Ignacio Aular
-// Versión: 1.0
+// Versiï¿½n: 1.0
 // Fecha: 10/02/2013
 // Hora: 10:10 a.m.
-// Descripción: Muestra como llamar procedimientos almacenados
-// en una librería externa.
+// Descripciï¿½n: Muestra como llamar procedimientos almacenados en una librerï¿½a externa.
 
-// Llamado a librería estandar integrado
+// Llamado a librerï¿½a estandar integrado
 #include <stdio.h>
-// Llamado a librería elaborada por el programador
+// Llamado a librerï¿½a elaborada por el programador
 #include "aritmetica.h"
 
-// Declaración y definición del método principal main
+// Declaraciï¿½n y definiciï¿½n del mï¿½todo principal main
 int main(void)
 {
 	// Llamado al procedimiento principal
 	menu_de_opciones();
 
-	// Indica al sistema operativo que el programa terminó con éxito
+	// Indica al sistema operativo que el programa terminï¿½ con ï¿½xito
 	return 0;
 }
 
