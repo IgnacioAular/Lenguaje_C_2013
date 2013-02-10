@@ -43,7 +43,7 @@ void procesar_signo(char signo)
         } while ( numero2 == 0.0f );
     }
 
-	// Se selecciona una operaci�n y se procesan los valores dando un resultado
+    // Se selecciona una operaci�n y se procesan los valores dando un resultado
     switch ( signo )
     {
         case '+': resultado = numero1 + numero2; break;
@@ -52,7 +52,7 @@ void procesar_signo(char signo)
         case '/': resultado = numero1 / numero2; break;
     }
 
-	// Dependiendo del tipo de operaci�n se muestra la informaci�n en formato apropiado
+    // Dependiendo del tipo de operaci�n se muestra la informaci�n en formato apropiado
     if ( signo != '/')
     {
         printf("%.0f %c %.0f = %.0f\n\n", numero1, signo, numero2, resultado);
@@ -104,7 +104,7 @@ void menu_de_opciones()
         printf("5.- Salir.\n");
         scanf("%d", &opcion);
 
-		// Pasamos la opción selecciona al switch que llama al procedimiento correspondiente
+	// Pasamos la opción selecciona al switch que llama al procedimiento correspondiente
         switch ( opcion )
         {
             case 1:
@@ -126,7 +126,7 @@ void menu_de_opciones()
                 printf("Opcion no valida.\n");
                 break;
         }
-	// Mienstras la opción sea diferente de 5 se seguirá ejecutando el programa
+    // Mienstras la opción sea diferente de 5 se seguirá ejecutando el programa
     } while ( opcion != 5 );
 }
 
