@@ -22,7 +22,7 @@ void procesar_signo(char signo)
 
     // Solicitud de entrada de dato 01
     printf("\nIngrese el valor 01: ");
-	scanf("%f", &numero1);
+    scanf("%f", &numero1);
 
     // Valida que no se trate de una division
     if ( signo != '/' )
