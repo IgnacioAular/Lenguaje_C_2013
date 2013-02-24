@@ -1,12 +1,13 @@
 // Programa: calculadora.c
 // Autor: Ignacio Aular
-// Versión: 1.0
-// Fecha: 10/02/2013
-// Hora: 10:10 a.m.
-// Descripción: Muestra como llamar procedimientos almacenados en una librería externa.
+// Versión: 2.0
+// Fecha: 24/02/2013
+// Hora: 11:59 a.m.
+// Descripción: Muestra como llamar procedimientos yfunciones almacenadas en una librería externa.
 
 // Llamado a librería estandar integrado
 #include <stdio.h>
+
 // Llamado a librería elaborada por el programador
 #include "aritmetica.h"
 
