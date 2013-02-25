@@ -20,7 +20,7 @@ void mensaje( char mensaje[100] )
 // Permite orientar al usuario sobre los datos de entrada
 void ayuda()
 {
-	printf("\n\t[ >>> Solo se permite la entrada de numeros enteros. <<< ]\n");
+    printf("\n\t[ >>> Solo se permite la entrada de numeros enteros. <<< ]\n");
     printf("\t[ >>> Ejemplo de entradas [... -3,-2,-1,0,1,2,3 ...] <<< ]\n");
     printf("\t[ >>> El sistema se recupera de entradas incorrectas <<< ]\n\n");
 }
@@ -28,7 +28,7 @@ void ayuda()
 // Permite mostrar una despedida cordial así como los detalles hacerca del autor y sus contactos
 void creditos()
 {
-	printf("\n\t[ >>> Muchas gracias por usar el sistema <<< ]\n");
+    printf("\n\t[ >>> Muchas gracias por usar el sistema <<< ]\n");
     printf("\t  [ * Elaborado por: Ing. Ignacio Aular * ]");
     printf("\n\t   [ * Email: ignacio_345@hotmail.com * ]");
     printf("\n\t     [ * Telefono: 0424 - 599 81 99 * ]\n\n");
@@ -43,7 +43,7 @@ int obtener_entero( float numero , char mensaje[100] )
     {
         while ( (caracter = getchar()) != '\n' ) 
         {       
-        	mensaje_error("\nPor favor ingrese un valor entero: ");   
+            mensaje_error("\nPor favor ingrese un valor entero: ");   
         }    
      }
      return numero;
@@ -52,7 +52,7 @@ int obtener_entero( float numero , char mensaje[100] )
 // Valida que el dato entero no sea igual a cero para el valor 02 en una operación de división
 int mayor_que_cero( float numero2, char signo )
 {
-	// Valida que no se trate de una division para poder obtener el valor 02
+    // Valida que no se trate de una division para poder obtener el valor 02
     if ( signo != '/' )
     {
         numero2 = obtener_entero( numero2, "Ingrese el valor 02: " );        
@@ -76,21 +76,21 @@ int mayor_que_cero( float numero2, char signo )
 // Toma dos valores decimales, el signo que indica el tipo de operación, procesa los datos y ofrece el resultado
 float operaciones(char signo, float resultado, float numero1, float numero2 )
 {
-	// Se selecciona una operación y se procesan los valores dando un resultado
-		switch ( signo )
-		{
-		    case '+': resultado = numero1 + numero2; break;
-		    case '-': resultado = numero1 - numero2; break;
-		    case '*': resultado = numero1 * numero2; break;
-		    case '/': resultado = numero1 / numero2; break;
-		}				
-		return resultado;
+    // Se selecciona una operación y se procesan los valores dando un resultado
+    switch ( signo )
+    {
+	 case '+': resultado = numero1 + numero2; break;
+	 case '-': resultado = numero1 - numero2; break;
+	 case '*': resultado = numero1 * numero2; break;
+	 case '/': resultado = numero1 / numero2; break;
+    }				
+    return resultado;
 }
 
 /* Procesa los valores dados de acuerdo al tipo de operación */
 void procesar_signo(char signo)
 {
-	system("clear");
+    system("clear");
     // Declaración e inicialización de variables
     float numero1 = 0.0f;
     float numero2 = 0.0f;
@@ -100,9 +100,9 @@ void procesar_signo(char signo)
     if ( signo != '/')
     {
     	 // Solicitud de entrada de dato 01
-   		numero1 = obtener_entero(numero1, "\nIngrese el valor 01: ");
+   	numero1 = obtener_entero(numero1, "\nIngrese el valor 01: ");
    		
-   		 // Valida que la entrada para el numero2 no sea cero en el caso de que signo sea igual a division
+   	// Valida que la entrada para el numero2 no sea cero en el caso de que signo sea igual a division
     	numero2 = obtener_entero(numero2, "Ingrese el valor 02: ");   	 
     	
     	// Selecciona la operacion correspondiente
@@ -113,9 +113,9 @@ void procesar_signo(char signo)
     else
     {
     	// Solicitud de entrada de dato 01
-   		numero1 = obtener_entero(numero1, "\nIngrese el valor 01: ");
+   	numero1 = obtener_entero(numero1, "\nIngrese el valor 01: ");
    		
-   		 // Valida que la entrada para el numero2 no sea cero en el caso de que signo sea igual a division
+   	// Valida que la entrada para el numero2 no sea cero en el caso de que signo sea igual a division
     	numero2 = mayor_que_cero(numero2, signo);
     	
     	// Selecciona la operacion correspondiente
@@ -128,35 +128,35 @@ void procesar_signo(char signo)
 /* Suma dos valores y muestra el resultado */
 void sumar_dos_enteros()
 {
-	mensaje("[ + Sumando + ]");
+    mensaje("[ + Sumando + ]");
     procesar_signo('+');
 }
 
 /* Resta dos valores y muestra el resultado */
 void restar_dos_enteros()
 {
-	mensaje("[ - Restando - ]");
+    mensaje("[ - Restando - ]");
     procesar_signo('-');
 }
 
 /* Multiplica dos valores y muestra el resultado */
 void multiplicar_dos_enteros()
 {
-	mensaje("[ * Multiplicando * ]");
+    mensaje("[ * Multiplicando * ]");
     procesar_signo('*');
 }
 
 /* Divide dos valores y muestra el resultado */
 void dividir_dos_enteros()
 {
-	mensaje("[ / Dividiendo / ]");
+    mensaje("[ / Dividiendo / ]");
     procesar_signo('/');
 }
 
 /* Muestra un menú de opciones y hace el llamado al procedimiento requerido */
 void menu_de_opciones()
 {
-	system("clear");
+    system("clear");
     // Declaración e inicialización de variable
     int opcion = 0;
 	
